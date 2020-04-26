@@ -1,0 +1,24 @@
+
+All endpoints of the api are:
+
+1. http://127.0.0.1:8000/oauth/users/ : This is used to create a user(A POST request)
+2. http://127.0.0.1:8000/oauth/token/login/ : This is used to login(A POST request)
+3. http://127.0.0.1:8000/oauth/token/logout/ : This is used to logout(A GET request)
+4. http://127.0.0.1:8000/oauth/home/ : This is allowed only for the restricted users.(A GET request)
+
+you can use postman to test the apis
+
+
+Database:
+ In database I have a Table by name authapp_user. you can find it in (Servers/PostgreSQL/DataBases/myapi/Schemas/public/Tables/authapp_user).It has the following fields.
+    a. Username
+    a. First name
+    b. Last name
+    d. Email
+    e. Password
+
+I was asked to add id but instead used Username because I felt it is easy to remember username rather than id.
+
+
+I used email and password to authenticate users as described in the problem statement. 
+Password is not stored as plain text but as an encripted text.
