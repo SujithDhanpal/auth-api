@@ -13,17 +13,11 @@ once you activate the environment install all packages mentioned in requirements
 
 Setting the project:
 
-1. To set the project you need to start the project with the name as "myapi"
-The command for it is python /path/to/django-admin.py" startproject testproject
-ex:  "C:\Program Files\Python27\Scripts\django-admin.py" startproject testproject
+1. To start the project clone the repository. Once you are done you will see a directory by name auth-api.
 
-2. Once the project is created enter into folder "myapi" using command cd myapi
-        you will see:
-            a.  Directory "myapi"
-            b.  manage.py
-            c.  db.sqlite3
+2. Enter into directory using command cd auth-api. 
 
-3. Delete "myapi" folder and paste "authapp" and "myapi" directories that you cloned from the git.
+3. Now activate the environment that you created earlier using the command:  conda activate venv
 
 4. Now open myapi/settings.py file and change the user name and password according to your own postgresql creadentials.
 
